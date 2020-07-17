@@ -1,7 +1,5 @@
-package org.hiromats3;
+package org.hiromats3.java;
 
-import org.hiromats3.Java8BaseListener;
-import org.hiromats3.Java8Parser;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;

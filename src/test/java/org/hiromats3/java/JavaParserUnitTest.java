@@ -1,4 +1,4 @@
-package org.hiromats3;
+package org.hiromats3.java;
 
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
