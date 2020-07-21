@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UppercaseMethodListener extends Java8BaseListener {
 
-    private List<String> errors = new ArrayList<String>();
+    private List<String> uppercaseMethods = new ArrayList<String>();
 
     @Override
     public void enterMethodDeclarator(Java8Parser.MethodDeclaratorContext ctx) {
@@ -16,11 +16,11 @@ public class UppercaseMethodListener extends Java8BaseListener {
         String methodName = node.getText();
 
         if (Character.isUpperCase(methodName.charAt(0))){
-            errors.add(String.format("Method %s is uppercased!", methodName));
+            uppercaseMethods.add(methodName);
         }
     }
 
-    public List<String> getErrors(){
-        return Collections.unmodifiableList(errors);
+    public List<String> getUppercaseMethods(){
+        return Collections.unmodifiableList(uppercaseMethods);
     }
 }
